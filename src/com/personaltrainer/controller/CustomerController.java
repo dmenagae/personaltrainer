@@ -49,4 +49,10 @@ public class CustomerController {
 		
 		return "redirect:/customer/list";
 	}
+	
+	@GetMapping("/homepage")
+	public String homepage(@ModelAttribute("customer") Customer theCustomer) {
+		
+		return "homepage";
+	}
 }
